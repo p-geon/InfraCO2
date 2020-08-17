@@ -15,3 +15,10 @@
 
 - Arduino 1.8.13
 - Python 3.7
+
+## ポートのチェック方法
+
+どちらでもよい
+
+- `ls -l /dev/tty.*`
+- `ls -l /dev/cu.*`

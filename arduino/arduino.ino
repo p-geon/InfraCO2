@@ -38,12 +38,14 @@ void loop() {
        */
       ppm = 2000 * (span_high - 2) / (span_high + span_low - 4);
       
-      Serial.println("PPM = " + String(ppm));
-      Serial.println(" span_high:" + String(span_high) + ", span_low: " + String(span_low));
+      //Serial.println("PPM = " + String(ppm));
+      //Serial.println(" span_high:" + String(span_high) + ", span_low: " + String(span_low));
+      int intppm = (int) ppm;
+      Serial.println(ppm);
     }
   }
   if(ppm >= 2000){
-    Serial.println("ppm value Overflow");
+    //Serial.println("ppm value Overflow");
     val_pwm = 0;
   }
 }
