@@ -42,4 +42,8 @@ void loop() {
       Serial.println(" span_high:" + String(span_high) + ", span_low: " + String(span_low));
     }
   }
+  if(ppm >= 2000){
+    Serial.println("ppm value Overflow");
+    val_pwm = 0;
+  }
 }
